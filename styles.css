@@ -1,0 +1,257 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #bfeff6; /* Light, ocean-inspired blue background */
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #00796b, #0288d1);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+header .tagline {
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+.hero {
+    background: url('assets/ocean-hero.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.hero .btn {
+    background: #ff7f50;
+    padding: 15px 25px;
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero .btn:hover {
+    background-color: #ff6347;
+    transform: translateY(-5px);
+}
+
+/* About Section */
+.about {
+    background-color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.3em;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Team Members Section */
+.team-members {
+    background: linear-gradient(135deg, #0288d1, #00796b);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.team-members h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Auto adjust based on screen size */
+    gap: 30px;
+    justify-items: center;
+    padding: 0 20px;
+}
+
+.team-member {
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: scale(1.1);
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 5px solid #fff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 1.1em;
+}
+
+/* Robots Section */
+.robots {
+    background: linear-gradient(135deg, #ffeb3b, #ff9800);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.robots h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.robot-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+}
+
+.robot-item {
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.robot-item:hover {
+    transform: scale(1.05);
+}
+
+.robot-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.robot-item h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.robot-item p {
+    font-size: 1.1em;
+}
+
+/* Events Section */
+.events {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.events h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.events ul {
+    list-style: none;
+    font-size: 1.3em;
+}
+
+.events ul li {
+    margin-bottom: 15px;
+    color: #0288d1;
+    transition: color 0.3s ease;
+}
+
+.events ul li:hover {
+    color: #ff7f50;
+}
+
+/* Footer */
+footer {
+    background-color: #00796b;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #ff7f50;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
